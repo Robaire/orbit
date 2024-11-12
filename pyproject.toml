@@ -14,13 +14,10 @@ license = { file = "LICENSE" }
 [project.optional-dependencies]
 docs = ["sphinx", "sphinx-autodoc-typehints"]
 test = ["pytest", "pyfakefs"]
-lint = ["black", "isort"]
+lint = ["ruff"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
 pythonpath = "."
 testpaths = ["test"]
 addopts = ["--import-mode=importlib"]
-
-[tool.isort]
-profile = "black"
