@@ -113,6 +113,15 @@ class TLE:
         )
 
     @classmethod
-    def from_file(cls, file):
-        """Generate a TLE from a file."""
-        cls()
+    def from_file(cls, file_path):
+        """Generate a TLE from a file.
+
+        Args:
+            file_path: File path
+
+        Return:
+            TLE: TLE object
+        """
+
+        with open(file_path, "r") as file:
+            return TLE.from_string(file.read())
