@@ -13,7 +13,7 @@ license = { file = "LICENSE" }
 
 [project.optional-dependencies]
 docs = ["sphinx", "sphinx-autodoc-typehints"]
-test = ["pytest"]
+test = ["pytest", "pyfakefs"]
 lint = ["black", "isort"]
 
 [tool.pytest.ini_options]
