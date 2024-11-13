@@ -1,28 +1,8 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__
 *.py[cod]
 *$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-build/
-dist/
-
-# Unit test / coverage reports
-.coverage
-.coverage.*
-coverage.xml
-*.cover
-.pytest_cache/
-cover/
-
-# Sphinx documentation
-docs/_build/
-
-# Environments
-venv/
-
-# Formatting
+.venv
+.pytest_cache
 .ruff_cache
+dist/
+docs/build/
