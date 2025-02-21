@@ -193,3 +193,6 @@ class TLE:
         line2 += f"{self._checksum(line2)}"
 
         return title + line1 + line2
+
+    def __str__(self) -> str:
+        return self.to_string()
